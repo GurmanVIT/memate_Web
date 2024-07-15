@@ -1,0 +1,64 @@
+.business {
+    padding: 90px 0 40px;
+
+    .gradient-text {
+        font-size: 170px;
+        line-height: 128px;
+        text-align: center;
+        font-weight: 700;
+        background: linear-gradient(to right, #22aeff, #FFB258);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .d_flex {
+        @include display(flex-end, flex-end);
+        left: 100px;
+        position: relative;
+
+        .content_img {
+            @include display(center, center);
+            margin-top: 10px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .iphone_img {
+            position: relative;
+            height: 70%;
+            left: -145px;
+            top: 50px;
+        }
+    }
+
+    .text_margin {
+        margin-top: 60px;
+
+        p {
+            margin-top: 12px;
+            color: $color_1;
+        }
+    }
+
+    .request_btn {
+        @include display(center, center);
+
+        button {
+            background-color: $black;
+            padding: 10px 20px;
+            color: $white;
+            border-radius: 20px;
+            font-size: 16px;
+            border-color: black;
+            transition: all .4s linear;
+            margin-top: 20px;
+
+            &:hover {
+                background-color: $white;
+                color: $black;
+            }
+        }
+    }
+}

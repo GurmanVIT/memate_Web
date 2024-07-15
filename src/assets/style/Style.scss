@@ -1,0 +1,30 @@
+//common
+@import "../style/common.scss";
+
+
+//theme
+@import "../style/theme.scss";
+
+
+//veriable
+@import "../style/veriable.scss";
+
+
+//header
+@import "../../component/Header/Header.scss";
+
+
+//business
+@import "../../component/Business/Business.scss";
+
+
+//slider
+@import "../../component/Slider/Slider.scss";
+
+
+//tabs
+@import "../../component/Tab/Tabs.scss";
+
+
+//solveCommon
+@import "../../component//SolveCommon/SolveCommon.scss";
