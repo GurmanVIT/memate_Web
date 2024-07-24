@@ -1,0 +1,110 @@
+.memate_seamless {
+    margin-bottom: 30px;
+
+    h3 {
+        font-size: 22px;
+
+        @media($breakpoint_LG) {
+            font-size: 20px;
+        }
+
+        @media($breakpoint_SM) {
+            font-size: 18px;
+        }
+    }
+
+    .div_bg {
+        @include display(Center, center);
+
+        .gradient-text {
+            width: 410px;
+            line-height: 1.2;
+            font-size: 77px;
+            background: linear-gradient(to right, #22aeff, #FFB258);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 30px;
+
+            @media($breakpoint_LG) {
+                width: 350px;
+                font-size: 65px;
+            }
+
+            @media($breakpoint_MD) {
+                width: 300px;
+                font-size: 30px;
+            }
+
+            @media($breakpoint_SM) {
+                width: 250px;
+                font-size: 28px;
+            }
+        }
+    }
+
+    .seamless_section {
+        @include display(space-between, center);
+        gap: 10px;
+        padding: 50px;
+        border-radius: 15px;
+        background: linear-gradient(146deg, #2B2B2D 5.4%, #777 108.55%);
+
+        @media($breakpoint_MD) {
+            padding: 30px;
+        }
+
+        @media($breakpoint_SM) {
+            padding: 30px 20px;
+        }
+
+        @media($breakpoint_ESM) {
+            padding: 25px 15px;
+        }
+
+        .flex_container {
+            @include display(space-between, center);
+            gap: 20px;
+            width: 100%;
+
+            @media($breakpoint_SM) {
+                gap: 5px;
+            }
+
+            .flex_column {
+                display: flex;
+                align-items: baseline;
+                flex-direction: column;
+                gap: 30px;
+
+                @media($breakpoint_MD) {
+                    gap: 15px;
+                }
+
+                .d_flex {
+                    @include display(space-between, center);
+
+                    .google_img {
+                        @include display(space-between, center);
+                        gap: 10px;
+
+                        img {
+                            width: 80%;
+
+                            @media($breakpoint_MD) {
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .memate_business_img {
+                @include display(center, center);
+
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

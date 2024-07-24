@@ -1,9 +1,21 @@
 .tab_sec {
     padding: 20px 0 40px;
 
+    @media($breakpoint_SM) {
+        padding-bottom: 25px;
+    }
+
     h2 {
         font-size: 29px;
         margin-bottom: 15px;
+
+        @media($breakpoint_MD) {
+            font-size: 26px;
+        }
+
+        @media($breakpoint_450) {
+            font-size: 22px;
+        }
     }
 
     .gradient-text {
@@ -15,33 +27,63 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 30px;
+
+        @media($breakpoint_LG) {
+            font-size: 90px;
+            line-height: 80px;
+        }
+
+        @media($breakpoint_MD) {
+            font-size: 65px;
+            line-height: 60px;
+        }
+
+        @media($breakpoint_SM) {
+            font-size: 50px;
+            line-height: 45px;
+        }
+
+        @media($breakpoint_450) {
+            font-size: 40px;
+            line-height: 40px;
+        }
+
+        @media($breakpoint_ESM) {
+            font-size: 35px;
+            line-height: 30px;
+        }
     }
 
-    .tab_btn {
+    .img_content {
         @include display(center, center);
+        flex-direction: column;
+        gap: 10px;
 
-        .img_content {
-            @include display(center, center);
-            flex-direction: column;
-            gap: 10px;
-
-            img {}
-
-            h6 {
-                color: $color_1;
-                margin-bottom: 0;
-                font-size: 16px;
-            }
+        h6 {
+            margin-bottom: 0;
+            font-size: 16px;
         }
     }
 
     .managementStyle {
         font-size: 24px;
         margin-bottom: 10px;
+
+        @media($breakpoint_SM) {
+            font-size: 21px;
+        }
+
+        @media($breakpoint_ESM) {
+            font-size: 18px;
+        }
     }
 
     .manage_para {
         color: $forgot;
+
+        @media($breakpoint_450) {
+            font-size: 14px;
+        }
     }
 
     .find_btn {
@@ -55,6 +97,15 @@
             font-weight: 600;
             border-radius: 20px;
             background-color: $white;
+
+            @media($breakpoint_SM) {
+                padding: 8px 20px;
+                font-size: 14px;
+            }
         }
     }
+}
+
+.hideme {
+    opacity: 0;
 }

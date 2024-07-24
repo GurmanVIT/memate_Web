@@ -1,0 +1,105 @@
+.onboarding_sec {
+    background: linear-gradient(to bottom right, #4AC7FE, #F69B3A);
+    padding-top: 50px;
+    border-radius: 20px;
+    margin-bottom: 70px;
+
+    @media($breakpoint_LG) {
+        margin-bottom: 55px;
+    }
+
+    @media($breakpoint_MD) {
+        margin-bottom: 40px;
+    }
+
+    @media($breakpoint_SM) {
+        margin-bottom: 30px;
+    }
+
+    .offer_zero_sec {
+        h2 {
+            color: $white;
+            font-size: 28px;
+
+            @media($breakpoint_XL) {
+                font-size: 26px;
+            }
+
+            @media($breakpoint_MD) {
+                font-size: 23px;
+            }
+
+            @media($breakpoint_SM) {
+                font-size: 19px;
+            }
+        }
+
+        h1 {
+            font-size: 80px;
+            color: $white;
+            margin-bottom: 15px;
+
+            @media($breakpoint_XL) {
+                font-size: 65px;
+            }
+
+            @media($breakpoint_LG) {
+                font-size: 50px;
+            }
+
+            @media($breakpoint_MD) {
+                font-size: 40px;
+            }
+
+            @media($breakpoint_SM) {
+                font-size: 35px;
+            }
+
+            @media($breakpoint_450) {
+                font-size: 30px;
+            }
+
+            @media($breakpoint_ESM) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            color: $white;
+            font-size: 15px;
+
+            @media($breakpoint_450) {
+                padding: 0 10px;
+            }
+
+            br {
+                @media($breakpoint_450) {
+                    display: none;
+                }
+            }
+        }
+
+        .book_demo_btn {
+            @include display(center, center);
+
+            button {
+                background-color: transparent;
+                margin-top: 25px;
+                padding: 10px 24px;
+                color: $white;
+                border: 1px solid $white;
+                border-radius: 25px;
+
+                @media($breakpoint_SM) {
+                    padding: 8px 20px;
+                    font-size: 14px;
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

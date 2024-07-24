@@ -2,6 +2,7 @@ import React from 'react';
 import content_img from '../../assets/img/Macbook Pro mockup.svg';
 import iphone_img from '../../assets/img/iPhone mockup.svg';
 import { Button } from 'react-bootstrap';
+import FadeIn from 'react-fade-in/lib/FadeIn';
 
 const Business = () => {
 
@@ -11,7 +12,10 @@ const Business = () => {
                 <h2>Business management cloud softwate.</h2>
                 <h2>All-in-One Platform</h2>
 
-                <h1 class="gradient-text">to run your <br /> business</h1>
+                <FadeIn>
+                    <h1 class="gradient-text">to run your <br /> business</h1>
+                </FadeIn>
+
                 <div className='d_flex'>
                     <div className='content_img'>
                         <img src={content_img} alt='content_img' />

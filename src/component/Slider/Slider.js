@@ -5,11 +5,10 @@ import abc_img from '../../assets/img/abc_img.svg';
 import the_guardian from '../../assets/img/the_guardian.svg';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-// import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import "swiper/css/free-mode";
-
+import { Autoplay, FreeMode, Navigation } from 'swiper/modules';
 
 const Slider = () => {
 
@@ -21,18 +20,18 @@ const Slider = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 freeMode={true}
-
+                modules={[Navigation, Autoplay, FreeMode]}
                 breakpoints={{
                     240: {
                         slidesPerView: 2,
                         spaceBetween: 20,
                     },
                     576: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20,
                     },
                     768: {
-                        slidesPerView: 2,
+                        slidesPerView: 3,
                         spaceBetween: 20,
                     },
                     992: {
@@ -43,8 +42,9 @@ const Slider = () => {
                 pagination={{
                     clickable: true,
                 }}
+                navigation={true}
                 autoplay={{
-                    delay: 3000,
+                    delay: 2000,
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 }}

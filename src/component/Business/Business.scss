@@ -1,6 +1,24 @@
 .business {
     padding: 90px 0 40px;
 
+    h2 {
+        @media($breakpoint_MD) {
+            font-size: 21px;
+        }
+
+        @media($breakpoint_SM) {
+            font-size: 18px;
+        }
+
+        @media($breakpoint_450) {
+            font-size: 17px;
+        }
+
+        @media($breakpoint_ESM) {
+            font-size: 16px;
+        }
+    }
+
     .gradient-text {
         font-size: 170px;
         line-height: 128px;
@@ -9,12 +27,46 @@
         background: linear-gradient(to right, #22aeff, #FFB258);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+
+        @media($breakpoint_XL) {
+            font-size: 120px;
+            line-height: 105px;
+        }
+
+        @media($breakpoint_LG) {
+            font-size: 95px;
+            line-height: 80px;
+        }
+
+        @media($breakpoint_MD) {
+            font-size: 70px;
+            line-height: 60px;
+        }
+
+        @media($breakpoint_SM) {
+            font-size: 50px;
+            line-height: 45px;
+        }
+
+        @media($breakpoint_450) {
+            font-size: 45px;
+            line-height: 40px;
+        }
+
+        @media($breakpoint_ESM) {
+            font-size: 35px;
+            line-height: 30px;
+        }
     }
 
     .d_flex {
         @include display(flex-end, flex-end);
         left: 100px;
         position: relative;
+
+        @media($breakpoint_SM) {
+            left: 45px;
+        }
 
         .content_img {
             @include display(center, center);
@@ -30,15 +82,83 @@
             height: 70%;
             left: -145px;
             top: 50px;
+            -webkit-animation: mover 1s infinite alternate;
+            animation: mover 1s infinite alternate;
+
+            @media($breakpoint_XL) {
+                width: 25%;
+            }
+
+            @media($breakpoint_XL) {
+                width: 25%;
+            }
+
+            @media($breakpoint_SM) {
+                width: 23%;
+                left: -80px;
+                top: 25px;
+            }
+
+            @media($breakpoint_450) {
+                width: 22%;
+                left: -60px;
+                top: 14px;
+            }
+
+            @-webkit-keyframes mover {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-50px);
+                }
+            }
+
+            @keyframes mover {
+                0% {
+                    transform: translateY(0);
+                }
+
+                100% {
+                    transform: translateY(-10px);
+                }
+            }
         }
     }
 
     .text_margin {
         margin-top: 60px;
 
+        @media($breakpoint_SM) {
+            margin-top: 50px;
+        }
+
+        h3 {
+            @media($breakpoint_MD) {
+                font-size: 18px;
+            }
+
+            @media($breakpoint_SM) {
+                font-size: 16px;
+            }
+
+            @media($breakpoint_ESM) {
+                font-size: 15px;
+            }
+        }
+
         p {
             margin-top: 12px;
-            color: $color_1;
+            color: $forgot;
+
+            @media($breakpoint_MD) {
+                font-size: 15px;
+            }
+
+            @media($breakpoint_SM) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -51,9 +171,13 @@
             color: $white;
             border-radius: 20px;
             font-size: 16px;
-            border-color: black;
+            border: 1px solid $black;
             transition: all .4s linear;
             margin-top: 20px;
+
+            @media($breakpoint_SM) {
+                font-size: 13px;
+            }
 
             &:hover {
                 background-color: $white;
